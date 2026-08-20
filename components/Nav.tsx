@@ -7,11 +7,14 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState<string>(nav.links[0].href.slice(1))
   const [atBottom, setAtBottom] = useState(false)
+  const [pastTitle, setPastTitle] = useState(false)
 
   const lastId = nav.links[nav.links.length - 1].href.slice(1)
   // The last section is too short to ever reach the observer's band, but once
   // the page is scrolled to the end it is unambiguously the one being read.
   const current = atBottom ? lastId : active
+  // Also show it whenever the mobile menu is open, so the panel is not headless.
+  const brandVisible = pastTitle || open
 
   useEffect(() => {
     const ids = nav.links.map((link) => link.href.slice(1))
@@ -51,6 +54,21 @@ export default function Nav() {
     }
   }, [])
 
+  // The hero already says the name in large type; the bar only repeats it once
+  // that title has scrolled up behind the bar.
+  useEffect(() => {
+    const title = document.getElementById('about-heading')
+    if (!title) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setPastTitle(!entry.isIntersecting),
+      { rootMargin: '-64px 0px 0px 0px', threshold: 0 }
+    )
+
+    observer.observe(title)
+    return () => observer.disconnect()
+  }, [])
+
   useEffect(() => {
     if (!open) return
 
@@ -71,7 +89,11 @@ export default function Nav() {
         <a
           href="#about"
           onClick={() => setOpen(false)}
-          className="text-[0.95rem] font-semibold tracking-tight text-ink"
+          aria-hidden={!brandVisible}
+          tabIndex={brandVisible ? undefined : -1}
+          className={`text-[0.95rem] font-semibold tracking-tight text-ink transition-opacity duration-300 ease-out ${
+            brandVisible ? 'opacity-100' : 'pointer-events-none opacity-0'
+          }`}
         >
           {nav.name}
         </a>
