@@ -43,3 +43,6 @@ next-env.d.ts
 # personal source material, not part of the app
 /Dan Butuc - CV.pdf
 /cv-app-spec.md
+
+# parked plans, not published while the repo is public
+/docs/
