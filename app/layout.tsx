@@ -10,11 +10,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://danbutuc.vercel.app'),
-  title: 'Dan Butuc — Automation & Product Engineer',
+  title: 'Dan Butuc - Automation & Product Engineer',
   description:
     'CV and portfolio of Dan Butuc, Automation & Product Engineer based in Luxembourg.',
   openGraph: {
-    title: 'Dan Butuc — Automation & Product Engineer',
+    title: 'Dan Butuc - Automation & Product Engineer',
     description: 'Built with Next.js, TypeScript, and Claude Code.',
     url: 'https://danbutuc.vercel.app',
     type: 'website',
