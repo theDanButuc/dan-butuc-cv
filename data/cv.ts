@@ -77,7 +77,7 @@ export const hero = {
 }
 
 export const coverLetter = {
-  title: 'Why EasyBiz',
+  title: 'Why 3F Venture Studio / EasyBiz',
   paragraphs: [
     "I'll be direct about where I fit and where I don't.",
     "The last project I delivered maps almost one-to-one onto this role. An accounting-sector client needed structure out of chaos — free-text turned into assigned, tracked project tasks. I ran discovery with them, designed the architecture — a locally hosted LLM connected to their project management platform over REST, inference kept on-premise for GDPR, not because it was the easy choice — then directed the build with Claude Code, reviewed everything that came out of it, and shipped it. Client relationship, architecture, quality gate, production: all mine, start to finish.",
