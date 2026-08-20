@@ -46,3 +46,6 @@ next-env.d.ts
 
 # parked plans, not published while the repo is public
 /docs/
+
+# playwright-mcp scratch output
+/.playwright-mcp/
