@@ -264,7 +264,15 @@ export const stack: StackCategory[] = [
   },
   {
     category: 'Web',
-    items: ['TypeScript', 'Node.js', 'React', 'Next.js', 'HTML5', 'CSS'],
+    items: [
+      'TypeScript',
+      'JavaScript',
+      'Node.js',
+      'React',
+      'Next.js',
+      'HTML5',
+      'CSS',
+    ],
   },
   {
     category: 'Native',
@@ -277,6 +285,10 @@ export const stack: StackCategory[] = [
       'C#',
       'PowerShell',
     ],
+  },
+  {
+    category: 'Design',
+    items: ['Adobe Creative Cloud', 'Photoshop', 'Lightroom', 'Canva'],
   },
 ]
 
