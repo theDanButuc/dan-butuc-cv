@@ -74,18 +74,6 @@ export const hero = {
   },
 }
 
-export const coverLetter = {
-  title: 'Why 3F Venture Studio / EasyBiz',
-  paragraphs: [
-    "I'll be direct about where I fit and where I don't.",
-    "The last project I delivered maps almost one-to-one onto this role. An accounting-sector client needed structure out of chaos - free-text turned into assigned, tracked project tasks. I ran discovery with them, designed the architecture - a locally hosted LLM connected to their project management platform over REST, inference kept on-premise for GDPR, not because it was the easy choice - then directed the build with Claude Code, reviewed everything that came out of it, and shipped it. Client relationship, architecture, quality gate, production: all mine, start to finish.",
-    "That's also how I built two macOS applications, one of which is live on the App Store right now. AI did most of the typing. I decided what got built, caught what looked right but wasn't, and took responsibility for what shipped.",
-    "I know your world from both sides. I operate in Luxembourg, I've delivered under the SME Packages programme, and I've personally dealt with enough incorporation paperwork to understand exactly what you're trying to eliminate. The people you're building for are my clients too.",
-    "One thing I won't pretend: I haven't shipped Fastify in production. My backend work is Python, AWS and Azure, PostgreSQL in containerised services. TypeScript I read, review and direct comfortably - the framework is a ramp-up, not a rebuild. If that's a blocker, I'd rather we both know now than find out later.",
-    "What I bring is someone who has already run the full loop alone - client to production - and who uses AI-directed development not as a methodology to talk about, but as how I actually work every day.",
-  ],
-}
-
 export const experience: ExperienceEntry[] = [
   {
     role: 'Automation & Product Engineer',

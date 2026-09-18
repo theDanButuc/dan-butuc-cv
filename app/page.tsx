@@ -1,5 +1,4 @@
 import Contact from '@/components/Contact'
-import CoverLetter from '@/components/CoverLetter'
 import Experience from '@/components/Experience'
 import Gate from '@/components/Gate'
 import Hero from '@/components/Hero'
@@ -13,7 +12,6 @@ export default function Page() {
       <Nav />
       <main>
         <Hero />
-        <CoverLetter />
         <Experience />
         <Projects />
         <Stack />
