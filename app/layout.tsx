@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     'CV and portfolio of Dan Butuc, Automation & Product Engineer based in Luxembourg.',
   openGraph: {
     title: 'Dan Butuc - Automation & Product Engineer',
-    description: 'Built with Next.js, TypeScript, and Claude Code.',
+    description:
+      'CV and portfolio of Dan Butuc, Automation & Product Engineer based in Luxembourg.',
     url: 'https://danbutuc.vercel.app',
     type: 'website',
   },

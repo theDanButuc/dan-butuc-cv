@@ -50,12 +50,6 @@ export default function Contact() {
             </li>
           ))}
         </ul>
-
-        <div className="mt-14 text-xs leading-relaxed text-muted">
-          {contact.footer.map((line) => (
-            <p key={line}>{line}</p>
-          ))}
-        </div>
       </div>
     </Section>
   )

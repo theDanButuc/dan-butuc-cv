@@ -298,8 +298,4 @@ export const contact = {
       icon: 'hertzcast',
     },
   ] satisfies IconLink[],
-  footer: [
-    'Built with Next.js, TypeScript, and Claude Code.',
-    'Deployed on Vercel.',
-  ],
 }
