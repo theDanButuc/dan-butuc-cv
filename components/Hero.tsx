@@ -18,10 +18,6 @@ export default function Hero() {
               </h1>
               <p className="mt-2 text-lg text-muted">{hero.title}</p>
 
-              <p className="mt-6 text-[0.95rem] font-medium text-accent-text">
-                {hero.accent}
-              </p>
-
               <div className="mt-6 space-y-4 text-justify hyphens-auto text-[0.975rem] leading-relaxed text-ink/85">
                 {hero.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>

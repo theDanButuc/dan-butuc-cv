@@ -47,8 +47,6 @@ export const nav: { name: string; links: NavLink[] } = {
 export const hero = {
   name: 'Dan Butuc',
   title: 'Automation & Product Engineer',
-  accent:
-    'Built specifically for 3F Venture Studio / EasyBiz - because the role deserved more than a PDF.',
   paragraphs: [
     'I ship products end-to-end - scope, architecture, AI-directed implementation with Claude Code, review, production. Background in cloud and DevOps engineering combined with 13+ years of production automation.',
     'This app was built with Next.js, TypeScript, and Claude Code - directed, reviewed, and shipped the same way your role works.',
