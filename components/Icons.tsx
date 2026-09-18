@@ -36,9 +36,14 @@ export function Icon({
     )
   }
 
+  // The LinkedIn mark is bottom-heavy - the tittle is a small isolated square
+  // while the bars fill y 9-21 - so a geometrically centred box reads as low.
+  // Shifting the viewBox lifts the glyph without touching the layout box.
+  const viewBox = name === 'linkedin' ? '0 1 24 24' : '0 0 24 24'
+
   return (
     <svg
-      viewBox="0 0 24 24"
+      viewBox={viewBox}
       aria-hidden="true"
       focusable="false"
       className={className}
