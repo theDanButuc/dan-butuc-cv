@@ -37,7 +37,7 @@ export default function Hero() {
                         name={link.icon}
                         className="h-4 w-4 text-muted transition-colors group-hover:text-accent-text"
                       />
-                      <span className="border-b border-transparent pb-px transition-colors group-hover:border-accent">
+                      <span className="border-b border-transparent pt-[2px] pb-px transition-colors group-hover:border-accent">
                         {link.label}
                       </span>
                     </a>
