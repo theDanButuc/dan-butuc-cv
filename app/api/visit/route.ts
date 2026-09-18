@@ -1,6 +1,7 @@
-// Notifies when a visitor passes the entry gate. Never notifies on plain page
-// loads: crawlers and link-preview bots do not type the name, so every message
-// here is a person who deliberately went in.
+// Notifies when a visitor opens the CV. Fired from the client on mount, so
+// crawlers and link-preview bots that never run JavaScript stay out of it.
+// Anything that does execute the page will ping, so this is noisier than the
+// entry gate it replaced.
 
 const WINDOW_MS = 60_000
 const MAX_PER_WINDOW = 5
